@@ -1,0 +1,39 @@
+name "sily-web"
+description "Web related utils and parsers"
+authors "Alisa Lain"
+copyright "Copyright © 2023, Alisa Lain"
+license "GPL3"
+targetType "library"
+targetPath "lib"
+sourcePaths "web/"
+importPaths "web/"
+dependency "sily-web:html" version="*"
+dependency "sily-web:js"   version="*"
+dependency "sily-web:css"  version="*"
+
+// Libraries
+
+subPackage {
+	name "html"
+	targetType "library"
+	targetPath "lib"
+	sourcePaths "html/"
+	importPaths "html/"
+    dependency "sily" version="~>3.0.0"
+}
+
+subPackage {
+	name "js"
+	targetType "library"
+	targetPath "lib"
+	sourcePaths "js/"
+	importPaths "js/"
+}
+
+subPackage {
+	name "css"
+	targetType "library"
+	targetPath "lib"
+	sourcePaths "css/"
+	importPaths "css/"
+}
