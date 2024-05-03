@@ -2,7 +2,7 @@ name "sily-web"
 description "Web related utils and parsers"
 authors "Alisa Lain"
 copyright "Copyright © 2023, Alisa Lain"
-license "GPL3"
+license "GPL-3.0"
 targetType "library"
 targetPath "lib"
 sourcePaths "web/"
@@ -19,7 +19,7 @@ subPackage {
 	targetPath "lib"
 	sourcePaths "html/"
 	importPaths "html/"
-    dependency "sily" version="~>3.0.0"
+    dependency "sily" version="~>4"
 }
 
 subPackage {
